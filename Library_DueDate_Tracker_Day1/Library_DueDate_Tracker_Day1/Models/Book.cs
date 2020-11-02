@@ -14,9 +14,9 @@ namespace Library_DueDate_Tracker_Day1.Models
         public DateTime DueDate { get; set; }
         public DateTime? ReturnedDate { get; set; }
         public string Author { get; }
-        public Book(int id, string title, string author, DateTime publicationDate, DateTime chechedOutDate)
+        public Book(int bookID, string title, string author, DateTime publicationDate, DateTime chechedOutDate)
         {
-            ID = id;
+            ID = bookID;
             Title = title;
             Author = author;
             PublicationDate = publicationDate;

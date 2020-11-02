@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>List</h1>
+<section>
+    @if (ViewBag.Books.Count > 0)
+    {
+        <ul>
+            @foreach (Book item in ViewBag.Books)
+            {
+                <li>Id of the Book : @(item.ID)</li>
+                <li>Title of the Book :@(item.Title)</li>
+                <li>Author of the Book :@(item.Author)</li>
+                <li>PublicationDate of the Book :@(item.PublicationDate)</li>
+                <li>Checkout Date of the Book :@(item.CheckedOutDate)</li>
+                <li>Due Date of the Book :@(item.DueDate)</li>
+                <li>Returned Date of the Book :@(item.ReturnedDate)</li>
+            }
+
+        </ul>
+    }
+</section>
+
+
+

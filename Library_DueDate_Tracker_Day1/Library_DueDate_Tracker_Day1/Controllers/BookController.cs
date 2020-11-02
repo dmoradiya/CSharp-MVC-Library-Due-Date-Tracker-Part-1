@@ -9,10 +9,27 @@ namespace Library_DueDate_Tracker_Day1.Controllers
 {
     public class BookController : Controller
     {
-        public static List<Book> Books = new List<Book>();
+       
         public IActionResult Index()
         {
+            return RedirectToAction("List");
+        }
+        public IActionResult List()
+        {
+            ViewBag.Books = Books;
             return View();
+        }
+        public IActionResult Create(int bookID, string title, string author, DateTime publicationDate, DateTime chechedOutDate)
+        {
+            CreateBook(bookID, title, author, publicationDate, chechedOutDate);
+
+            return View();
+        }
+       
+        public static List<Book> Books = new List<Book>();
+        public void CreateBook(int bookID, string title, string author, DateTime publicationDate, DateTime chechedOutDate)
+        {
+            Books.Add(new Book(bookID, title, author, publicationDate, chechedOutDate));
         }
     }
 }
