@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library_DueDate_Tracker_Day1", "Library_DueDate_Tracker_Day1\Library_DueDate_Tracker_Day1.csproj", "{77C2A095-E13B-4693-B4DA-4DD87EA3FD94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77C2A095-E13B-4693-B4DA-4DD87EA3FD94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C2A095-E13B-4693-B4DA-4DD87EA3FD94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C2A095-E13B-4693-B4DA-4DD87EA3FD94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C2A095-E13B-4693-B4DA-4DD87EA3FD94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C2B1FA5-CA3E-48E0-815B-2D8168B5A5F4}
+	EndGlobalSection
+EndGlobal
