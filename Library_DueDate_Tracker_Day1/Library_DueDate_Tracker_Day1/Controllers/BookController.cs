@@ -43,7 +43,7 @@ namespace Library_DueDate_Tracker_Day1.Controllers
         // Returns the “Book” object with the given “ID” from the “Books” list.
         public Book GetBookByID(int bookId)
         {
-            return Books.Where(x => x.ID == bookId).SingleOrDefault();
+            return Books.Where(x => x.ID == bookId).FirstOrDefault();
         }
 
         // Extensions are 7 days from today’s date.
