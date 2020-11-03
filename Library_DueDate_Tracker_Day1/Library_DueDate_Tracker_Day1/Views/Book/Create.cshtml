@@ -25,4 +25,18 @@
     </form>
 
 </section>
+<section>
+    @try
+    {
+        @foreach (Book book in ViewBag.Books)
+        {
+            <p>"You have successfully checked out @(book.Title) until @(book.DueDate).</p>
+        }
+    }
+    catch (Exception)
+    {
+
+        <p>Unable to check out book</p> 
+    }
+</section>
 

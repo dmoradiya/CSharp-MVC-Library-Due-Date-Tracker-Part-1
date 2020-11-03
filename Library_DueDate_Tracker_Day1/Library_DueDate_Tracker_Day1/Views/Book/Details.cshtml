@@ -5,7 +5,7 @@
 
 <h1>Details</h1>
 @{
-    int id = Convert.ToInt32(Context.Request.Query.Select(x => x.Value).Single());
+    int id = Convert.ToInt32(Context.Request.Query.Select(x => x.Value).SingleOrDefault());
 
 }
 @if (id != 0)
@@ -23,3 +23,18 @@ else
 {
     <p>No book selected</p>
 }
+<section>
+    <form action="/Book/Details" method="get">
+        <input type="submit" value="Extend Due Date" />
+    </form>
+</section>
+<section>
+    <form action="/Book/Details" method="get">
+        <input type="submit" value="Return Book" />
+    </form>
+</section>
+<section>
+    <form action="/Book/Details" method="get">
+        <input type="submit" value="Remove Book" />
+    </form>
+</section>
