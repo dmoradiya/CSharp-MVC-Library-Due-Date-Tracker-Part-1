@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+@{
+    int id = Convert.ToInt32(Context.Request.Query.Select(x => x.Value).Single());
+
+}
+
+@foreach (Book book in ViewBag.Books)
+{
+    @if (book.ID == id)
+    {
+        <p>You checked out @(book.Title) on @(book.CheckedOutDate), and the due date is @(book.DueDate)</p>
+    }
+
+}
